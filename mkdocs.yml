@@ -1,0 +1,57 @@
+site_name: Laravel-Elasticsearch-docs
+site_author: Flc
+site_description: Laravel-Elasticsearch-docs
+repo_url: https://github.com/flc1125/laravel-elasticsearch-docs
+# site_url: https://laravel-elasticsearch.flc.io
+theme:
+  name: 'material'
+  language: 'zh'
+  feature:
+    # tabs: true
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: "#"
+  # pymdown-extensions
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: none
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      # css_class: codehilite # https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - static/css/extra.css
+copyright: 'Copyright &copy; 2017-2019 <a href="http://flc.io" target="_black">叶子坑</a>'
+google_analytics: ['UA-118478085-1', 'auto']
+extra:
+  social:
+    - type: 'home'
+      link: 'http://flc.io'
+    - type: 'github'
+      link: 'https://github.com/flc1125'
+  # disqus: 'flc-docs' # 需翻墙
